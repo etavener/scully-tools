@@ -8,7 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:publish": "npm run build && npm publish ./dist/scully-interceptor"
+    "publish:intercept": "npm run build && npm publish ./dist/scully-interceptor",
+    "build:plugin": "ng build scully-wordpress-plugin --prod",
+    "publish:plugin": "npm run build:plugin && npm publish ./dist/scully-wordpress-plugin"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +22,6 @@
     "@angular/platform-browser": "~9.1.9",
     "@angular/platform-browser-dynamic": "~9.1.9",
     "@angular/router": "~9.1.9",
-    "@scullyio/ng-lib": "0.0.24",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -30,10 +31,14 @@
     "@angular-devkit/build-ng-packagr": "~0.901.8",
     "@angular/cli": "^9.1.8",
     "@angular/compiler-cli": "~9.1.9",
+    "@scullyio/init": "0.0.28",
+    "@scullyio/ng-lib": "0.0.27",
+    "@scullyio/scully": "0.0.99",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
+    "express": "^4.17.1",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",

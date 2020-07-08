@@ -42,6 +42,46 @@
           }
         }
       }
+    },
+    "scully-wordpress-plugin": {
+      "projectType": "library",
+      "root": "projects/scully-wordpress-plugin",
+      "sourceRoot": "projects/scully-wordpress-plugin/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/scully-wordpress-plugin/tsconfig.lib.json",
+            "project": "projects/scully-wordpress-plugin/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/scully-wordpress-plugin/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/scully-wordpress-plugin/src/test.ts",
+            "tsConfig": "projects/scully-wordpress-plugin/tsconfig.spec.json",
+            "karmaConfig": "projects/scully-wordpress-plugin/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/scully-wordpress-plugin/tsconfig.lib.json",
+              "projects/scully-wordpress-plugin/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "scully-interceptor"
 }

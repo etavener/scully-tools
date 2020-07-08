@@ -19,6 +19,10 @@
       "scully-interceptor": [
         "dist/scully-interceptor/scully-interceptor",
         "dist/scully-interceptor"
+      ],
+      "scully-wordpress-plugin": [
+        "dist/scully-wordpress-plugin/scully-wordpress-plugin",
+        "dist/scully-wordpress-plugin"
       ]
     }
   },
