@@ -1,6 +1,6 @@
 {
   "name": "scully-wordpress-plugin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Scully router plugin for resolving Wordpress parameters",
   "author": "Ewan Tavener",
   "repository": {
@@ -12,9 +12,9 @@
   },
   "homepage": "https://github.com/etavener/scully-tools",
   "peerDependencies": {
-    "@scullyio/init": "0.0.28",
-    "@scullyio/ng-lib": "0.0.27",
-    "@scullyio/scully": "0.0.99"
+    "@scullyio/init": ">0.0.28",
+    "@scullyio/ng-lib": ">0.0.27",
+    "@scullyio/scully": ">0.0.99"
   },
   "dependencies": {}
 }

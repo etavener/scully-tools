@@ -1,6 +1,6 @@
 {
   "name": "scully-interceptor",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Scully interceptor for storing GET api responses in the transferState",
   "author": "Ewan Tavener",
   "repository": {
@@ -12,9 +12,9 @@
   },
   "homepage": "https://github.com/etavener/scully-tools",
   "peerDependencies": {
-    "@angular/common": "^9.1.11",
-    "@angular/core": "^9.1.11",
-    "@scullyio/ng-lib": "0.0.24"
+    "@angular/common": ">9.1.11",
+    "@angular/core": ">9.1.11",
+    "@scullyio/ng-lib": ">0.0.24"
   },
   "dependencies": {
     "tslib": "^1.10.0"
