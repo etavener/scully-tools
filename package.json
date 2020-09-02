@@ -10,7 +10,9 @@
     "e2e": "ng e2e",
     "publish:intercept": "npm run build && npm publish ./dist/scully-interceptor",
     "build:plugin": "ng build scully-wordpress-plugin --prod",
-    "publish:plugin": "npm run build:plugin && npm publish ./dist/scully-wordpress-plugin"
+    "publish:plugin": "npm run build:plugin && npm publish ./dist/scully-wordpress-plugin",
+    "build:css-plugin": "ng build scully-plugin-optimize-css --prod",
+    "publish:css-plugin": "npm run build:css-plugin && npm publish ./dist/scully-plugin-optimize-css"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +24,8 @@
     "@angular/platform-browser": "~9.1.9",
     "@angular/platform-browser-dynamic": "~9.1.9",
     "@angular/router": "~9.1.9",
+    "extract-css": "^1.5.5",
+    "purgecss": "^2.3.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

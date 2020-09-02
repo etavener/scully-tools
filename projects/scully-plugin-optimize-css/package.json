@@ -1,0 +1,23 @@
+{
+  "name": "scully-plugin-optimize-css",
+  "version": "0.0.2",
+  "description": "A Scully plugin for optimizing the css.",
+  "author": "Ewan Tavener",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/etavener/scully-tools"
+  },
+  "bugs": {
+    "url": "https://github.com/etavener/scully-tools/issues"
+  },
+  "homepage": "https://github.com/etavener/scully-tools",
+  "peerDependencies": {
+    "@scullyio/init": ">0.0.28",
+    "@scullyio/ng-lib": ">0.0.27",
+    "@scullyio/scully": ">0.0.99"
+  },
+  "dependencies": {
+    "purgecss": "^2.3.0",
+    "extract-css": "^1.5.5"
+  }
+}
